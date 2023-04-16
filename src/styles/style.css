@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import '../../node_modules/material-icons/iconfont/material-icons.css';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+body {
+    background-image: url("../images/arenasdecabralesweb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: bisque;
+}
+
+
+header {
+    width: 100%;
+  }
+  
+header nav {
+    background: #0593b3;
+  }
+  
+  
+header nav ul {
+    overflow: hidden;
+    list-style: none;
+  }
+  
+header nav ul li {
+    float: left;
+  }
+  
+header nav ul li a {
+    color: #fff;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+  }
+  
+header nav ul li a:visited {
+    color: #fff;
+  
+  }
+    
+header nav ul li span {
+    margin-right: 10px;
+  }
+  
+header nav ul li a:hover {
+    background: #037E8C;
+  }
+
+.mindex {
+    content: "";
+  
+    width: 100%;
+    height: 87vh;
+
+    opacity: 1;
+    overflow: auto;
+    z-index: 1;
+  }
+ 
+.menu_bar {
+    display: none;
+  }
+
+.titulo {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.pagina {
+  display: block;
+  justify-content: center;
+  align-items: top;
+
+}
+
+.tabla-container {
+  margin: 0 auto;
+  max-width: 100%;
+  overflow-x: auto;
+  display: block;
+  flex-basis: calc(50% - 10px);
+  color: white;
+}
+
+table {
+  width: 75%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.cspan {
+  color: #fff;
+  font-size: 4em;
+}
+.seccion {
+  padding-top: 5vh;
+  width: 50%;
+  margin: 0 auto;
+  color:ghostwhite;
+}
+
+section {
+  padding-top: 5vh;;
+}
+
+img {
+  width: 100vh;
+}
+
+section p a {
+   color: white;
+  text-decoration: none;
+}
+
+  @media screen and (max-width:800px) {
+
+    .titulo {
+      font-size: 1.5rem;
+     
+    }
+    .cspan {
+      
+      font-size: 3em;
+    }
+
+
+    img {
+      width: 75vh;
+    }
+
+    header nav {
+      width: 80%;
+      height: 100%;
+      left: -100%;
+      margin: 0;
+      position: fixed;
+    }
+  
+    header nav ul li {
+      display: block;
+      float: none;
+      border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+  
+    .menu_bar {
+      display: block;
+      width: 100%;
+      background: #ccc;
+    }
+ 
+    .menu_bar .bt-menu {
+      display: block;
+      padding: 20px;
+      background: #0593b3;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 25px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+ 
+    .menu_bar span {
+      float: left;
+      font-size: 40px;
+    }
+  
+  }
+
+
+  /* Diseño para teléfonos móviles */
+@media only screen and (max-width: 480px) {
+
+  .titulo {
+    font-size: 1.5rem;
+   
+  }
+  .cspan {
+    
+    font-size: 3em;
+  }
+
+  img {
+    width: 25vh;
+  }
+
+  header nav {
+    width: 80%;
+    height: 100%;
+    left: -100%;
+    margin: 0;
+    position: fixed;
+  }
+
+  header nav ul li {
+    display: block;
+    float: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+  }
+
+  .menu_bar {
+    display: block;
+    width: 100%;
+    background: #ccc;
+  }
+
+  .menu_bar .bt-menu {
+    display: block;
+    padding: 20px;
+    background: #0593b3;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .menu_bar span {
+    float: left;
+    font-size: 40px;
+  }
+
+  }
+
+  footer {
+    color: #fff;
+  }
+
+  /* Estili para las tabletas */
+  @media only screen and (min-width: 481px) and (max-width: 1024){
+
+    .titulo {
+      font-size: 1.8rem;
+     
+    }
+    .cspan {
+    
+      font-size: 3.6em;
+    }
+
+    img {
+      width: 90vh;
+    }
+
+
+
+  }
+
+
