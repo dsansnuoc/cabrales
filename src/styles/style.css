@@ -17,7 +17,7 @@ body {
     background-color: bisque;
 }
 
-
+/*
 header {
     width: 100%;
   }
@@ -55,6 +55,47 @@ header nav ul li span {
 header nav ul li a:hover {
     background: #037E8C;
   }
+*/
+
+
+  footer {
+    width: 100%;
+  }
+  
+  footer nav {
+    background: #0593b3;
+  }
+  
+  
+  footer nav ul {
+    overflow: hidden;
+    list-style: none;
+  }
+  
+  footer nav ul li {
+    float: left;
+  }
+  
+  footer nav ul li a {
+    color: #fff;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  footer nav ul li a:visited {
+    color: #fff;
+  
+  }
+    
+  footer nav ul li span {
+    margin-right: 10px;
+  }
+  
+  footer nav ul li a:hover {
+    background: #037E8C;
+  }
+
 
 .mindex {
     content: "";
@@ -72,7 +113,7 @@ header nav ul li a:hover {
   }
 
 .titulo {
-  font-size: 2rem;
+  font-size: 4rem;
   text-align: center;
 }
 
@@ -124,15 +165,71 @@ img {
   width: 100vh;
 }
 
+.logo {
+  width: 15vh;
+}
+
+
+.logoF {
+  width: 5vh;
+}
+
 section p a {
    color: white;
   text-decoration: none;
 }
 
+
+.imagen-container {
+  position: relative;
+ width: 112.5vh;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.imagen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.imagen.active {
+  opacity: 1;
+}
+
+
+contenedor-svg {
+  width: 200px;
+  height: 200px;
+}
+
+.svg {
+  width: 100%;
+  height: 100%;
+  animation: rotacion 4s 3 linear; 
+}
+
+@keyframes rotacion {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.imgC {
+  width: 25vh;
+}
+
   @media screen and (max-width:800px) {
 
     .titulo {
-      font-size: 1.5rem;
+      font-size: 3rem;
      
     }
     .cspan {
@@ -145,7 +242,11 @@ section p a {
       width: 75vh;
     }
 
-    header nav {
+    .imgC {
+      width: 18.75vh;
+    }
+
+    footer nav {
       width: 80%;
       height: 100%;
       left: -100%;
@@ -153,7 +254,7 @@ section p a {
       position: fixed;
     }
   
-    header nav ul li {
+    footer nav ul li {
       display: block;
       float: none;
       border-bottom: 1px solid rgba(255, 255, 255, .3);
@@ -183,6 +284,14 @@ section p a {
       font-size: 40px;
     }
   
+    .imagen-container {
+      position: relative;
+      width: 61.25vh;
+      height: 37.5vh;
+      overflow: hidden;
+    }
+
+
   }
 
 
@@ -190,7 +299,7 @@ section p a {
 @media only screen and (max-width: 480px) {
 
   .titulo {
-    font-size: 1.5rem;
+    font-size: 3rem;
    
   }
   .cspan {
@@ -202,7 +311,11 @@ section p a {
     width: 25vh;
   }
 
-  header nav {
+  .imgC {
+    width: 6.25vh;
+  }
+
+  footer nav {
     width: 80%;
     height: 100%;
     left: -100%;
@@ -210,7 +323,7 @@ section p a {
     position: fixed;
   }
 
-  header nav ul li {
+  footer nav ul li {
     display: block;
     float: none;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
@@ -240,6 +353,15 @@ section p a {
     font-size: 40px;
   }
 
+
+  .imagen-container {
+    position: relative;
+   width: 28.125vh;
+    height: 18.75vh;
+    overflow: hidden;
+  }
+
+
   }
 
   footer {
@@ -250,7 +372,7 @@ section p a {
   @media only screen and (min-width: 481px) and (max-width: 1024){
 
     .titulo {
-      font-size: 1.8rem;
+      font-size: 3.6rem;
      
     }
     .cspan {
@@ -262,8 +384,19 @@ section p a {
       width: 90vh;
     }
 
+    .imgC {
+      width: 22.5vh;
+    }
 
+    .imagen-container {
+      position: relative;
+     width: 61.25vh;
+      height: 37.5vh;
+      overflow: hidden;
+    }
 
   }
 
-
+.imgIndex {
+  clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+}
